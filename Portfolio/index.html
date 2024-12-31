@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <title>Portfolio website complete</title>
 </head>
+<!-- serviceID = "service_2orm85t"; -->
+<!-- templateID = "template_ij7h24r"; -->
+<!-- YPHt3VtC2JVXb7PUe -->
+
 
 <body>
     <!--===== HEADER =====-->
@@ -194,7 +197,7 @@
                                 <h3> <b>Duration:</b>3 months</h3>
                                 <p>Collaborated with a senior developer to design and implement a responsive company
                                     website.
-                                    Gained hands-on experience in web development, including frontend
+                                    Gained hands-on experience in web development, including frontend and backend
                                     integration.</p>
                             </div>
                             <div class="box">
@@ -254,15 +257,13 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <div class="contact__container bd-grid">
-                    <form id="contact-form" class="contact__form">
-                        <input type="text" placeholder="Name" id="name" class="contact__input" required>
-                        <input type="email" placeholder="Email" id="email" class="contact__input" required>
-                        <textarea id="message" placeholder="Your message" cols="30" rows="10" class="contact__input"
-                            required></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
-                    </form>
-                </div>
+                <form id="contact-form" class="contact__form">
+                    <input type="text" placeholder="Name" id="name" class="contact__input" required>
+                    <input type="email" placeholder="Email" id="email" class="contact__input" required>
+                    <textarea id="message" placeholder="Your message" cols="30" rows="10" class="contact__input"
+                        required></textarea>
+                    <input type="submit" value="Send" class="contact__button button">
+                </form>
             </div>
         </section>
     </main>
@@ -284,41 +285,9 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-    <!-- <script>
-        emailjs.init("YPHt3VtC2JVXb7PUe");
-    
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-    
-            const serviceID = " service_2orm85ts";
-            const templateID = "template_ij7h24r";
-    
-            const formData = {
-                user_name: document.getElementById("name").value,
-                user_email: document.getElementById("email").value,
-                message: document.getElementById("message").value,
-            };
-    
-            emailjs.send(serviceID, templateID, formData)
-                .then(() => {
-                    alert("Your message has been sent successfully!");
-                    document.getElementById("contact-form").reset();
-                })
-                .catch((error) => {
-                    console.error("Error:", error);
-                    alert("Failed to send your message. Please try again.");
-                });
-        });
-    </script>     -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <!-- <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "YPHt3VtC2JVXb7PUe",
-      });
-   })();
-</script> -->
+
+   
+
 </body>
 
 </html>
